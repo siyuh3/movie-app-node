@@ -8,7 +8,7 @@ describe('user.generateAuthToken', () => {
   it('should return a valid json web token', () => {
     const payload = {
       _id: new mongoose.Types.ObjectId().toHexString(),
-      isAdmin: true
+      name: "Jenny"
     };
 
     const user = new User(payload);
