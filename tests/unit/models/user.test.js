@@ -1,7 +1,7 @@
 const jwt = require("jsonwebtoken");
 const mongoose = require('mongoose');
 const config = require('config');
-const { User } = require('../../../models/user');
+const User = require('../../../models/User');
 const jwtSecret = config.get('jwtSecret');
 
 describe('user.generateAuthToken', () => {
