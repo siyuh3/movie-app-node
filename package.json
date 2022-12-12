@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "set NODE_ENV=development&& jest --watchAll --verbose --runInBand --coverage"
   },
   "keywords": [],
   "author": "",
@@ -20,5 +20,8 @@
     "node-fetch": "^3.2.10",
     "nodemon": "^2.0.20",
     "random-avatar-generator": "^2.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1"
   }
 }
